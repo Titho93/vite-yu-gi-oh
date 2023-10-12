@@ -6,7 +6,9 @@ export default {
 
 <template>
 
-    <Main>cards</Main>
+    <Main>
+        <h1>cards</h1>
+    </Main>
   
 </template>
 
