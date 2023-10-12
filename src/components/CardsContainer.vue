@@ -26,8 +26,8 @@ export default {
             <CharacterCard v-for="card in store.cardsList"
             :key="card.id"
             :name="card.name"
-            :archetype="card.type"
-            :image_url="card.image_url"
+            :archetype="card.archetype"
+            :image="card.card_images[0].image_url"
             />
         </div>
     
@@ -39,7 +39,7 @@ export default {
 
 .container {
     background-color: white;
-    height: 100vh;
+    height: 100%;
     .row{
         padding: 40px 20px;
     }
