@@ -4,12 +4,14 @@ import axios from 'axios'
 import { store } from './data/store';
 import Header from './components/Header.vue';
 import CardsContainer from './components/CardsContainer.vue'
+import Result from './components/partials/Result.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    CardsContainer
+    CardsContainer,
+    Result
   },
   data(){
     return{
@@ -38,10 +40,16 @@ export default {
 
   <Header />
   <main>
-    <select name="type" id="Alien">
-      <option value="Alien">Alien</option>
-    </select>
-    <CardsContainer />
+    <div class="container">
+      <select name="type" id="Alien">
+        <option value="Alien">Alien</option>
+      </select>
+      <div class="container b">
+        <Result/>
+        <CardsContainer />
+      </div>
+
+    </div>
 
   </main>
   
@@ -57,8 +65,12 @@ select {
   border-radius: 5px;
   width: 120px;
   padding: 5px 10px;
-  margin: 20px 300px;
+  margin: 20px 10px;
   border: none;
 }
 
+.container.b {
+    background-color: white;
+    height: 100%;
+}
 </style>

@@ -21,7 +21,7 @@ export default {
 
 <template>
 
-    <div class="container ">
+    
         <div class="row">
             <CharacterCard v-for="card in store.cardsList"
             :key="card.id"
@@ -31,19 +31,13 @@ export default {
             />
         </div>
     
-    </div>
   
 </template>
 
 <style lang="scss" scoped>
 
-.container {
-    background-color: white;
-    height: 100%;
-    .row{
-        padding: 40px 20px;
+.row{
+        padding: 0px 20px;
     }
-}
-
 
 </style>
