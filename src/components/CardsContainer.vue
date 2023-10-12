@@ -23,20 +23,14 @@ export default {
 
     <div class="container ">
         <div class="row">
-            <CharacterCard />
-            <CharacterCard />
-            <CharacterCard />
-            <CharacterCard />
-            <CharacterCard />
-            <CharacterCard />
-            <CharacterCard />
-            <CharacterCard />
-            <CharacterCard />
-            <CharacterCard />
-            <CharacterCard />
-            <CharacterCard />
-            
+            <CharacterCard v-for="card in store.cardsList"
+            :key="card.id"
+            :name="card.name"
+            :type="card.type"
+            :image_url="card.image_url"
+            />
         </div>
+    
     </div>
   
 </template>

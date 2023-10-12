@@ -1,7 +1,12 @@
 <script>
 
 export default {
-    name: 'CharacterCard'
+    name: 'CharacterCard',
+    props:{
+        name: String,
+        type: String,
+        image_url: String
+    }
 }
 </script>
 
@@ -9,9 +14,9 @@ export default {
   
   <div class="col-2">
     <div class="bt-card">
-       <img src="https://images.ygoprodeck.com/images/cards/34541863.jpg" alt="Card">
-       <h6>Name card</h6>
-       <p>Species</p>
+       <img :src="image_url" alt="Card">
+       <h6>{{ name }}</h6>
+       <p>{{ type }}</p>
     </div>
   </div>
 
