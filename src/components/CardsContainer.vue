@@ -21,12 +21,21 @@ export default {
 
 <template>
 
-    <div>
-        <CharacterCard />
+    <div class="container">
+        <div class="cardContain">
+            <CharacterCard />
+            <CharacterCard />
+            <CharacterCard />
+            <CharacterCard />
+            <CharacterCard />
+            <CharacterCard />
+
+        </div>
     </div>
   
 </template>
 
 <style lang="scss" scoped>
+
 
 </style>

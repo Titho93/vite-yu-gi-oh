@@ -37,7 +37,10 @@ export default {
 <template>
 
   <Header />
-  <CardsContainer />
+  <Main>
+    <CardsContainer />
+
+  </Main>
   
   
 </template>
