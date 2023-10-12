@@ -1,12 +1,29 @@
 <script>
+
+import { store } from '../data/store'
+import CharacterCard from './partials/CharacterCard.vue'
+
 export default {
-    name: 'CardsContainer'
+    name: 'CardsContainer',
+    components: {
+        CharacterCard
+    },
+    data(){
+        return{
+            store
+        }
+    },
+    mounted(){
+        console.log(store.cardsList);
+    }
 }
 </script>
 
 <template>
 
-    <main>Card</main>
+    <div>
+        <CharacterCard />
+    </div>
   
 </template>
 
