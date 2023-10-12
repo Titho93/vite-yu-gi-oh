@@ -41,8 +41,11 @@ export default {
   <Header />
   <main>
     <div class="container">
-      <select name="type" id="Alien">
+      <select name="type" id="">
+        <option value="All">All</option>
         <option value="Alien">Alien</option>
+        <option value="Noble Knight">Noble Knight</option>
+        <option value="Sinful Spoils">Sinful Spoils</option>
       </select>
       <div class="container b">
         <Result/>
