@@ -4,7 +4,7 @@ export default {
     name: 'CharacterCard',
     props:{
         name: String,
-        type: String,
+        archetype: String,
         image_url: String
     }
 }
@@ -16,7 +16,7 @@ export default {
     <div class="bt-card">
        <img :src="image_url" alt="Card">
        <h6>{{ name }}</h6>
-       <p>{{ type }}</p>
+       <p>{{ archetype }}</p>
     </div>
   </div>
 

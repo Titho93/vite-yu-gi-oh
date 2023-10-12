@@ -26,7 +26,7 @@ export default {
             <CharacterCard v-for="card in store.cardsList"
             :key="card.id"
             :name="card.name"
-            :type="card.type"
+            :archetype="card.type"
             :image_url="card.image_url"
             />
         </div>
