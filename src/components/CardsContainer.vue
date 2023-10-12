@@ -21,21 +21,35 @@ export default {
 
 <template>
 
-    <div class="container">
-        <div class="cardContain">
+    <div class="container ">
+        <div class="row">
             <CharacterCard />
             <CharacterCard />
             <CharacterCard />
             <CharacterCard />
             <CharacterCard />
             <CharacterCard />
-
+            <CharacterCard />
+            <CharacterCard />
+            <CharacterCard />
+            <CharacterCard />
+            <CharacterCard />
+            <CharacterCard />
+            
         </div>
     </div>
   
 </template>
 
 <style lang="scss" scoped>
+
+.container {
+    background-color: white;
+    height: 100vh;
+    .row{
+        padding: 40px 20px;
+    }
+}
 
 
 </style>

@@ -1,3 +1,11 @@
 @use './partials/Var' as *;
 
 @import 'bootstrap/scss/bootstrap';
+
+main {
+    background-color: $primary-color;
+}
+
+.bt-card {
+    background-color: $primary-color;
+}

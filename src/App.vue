@@ -37,10 +37,13 @@ export default {
 <template>
 
   <Header />
-  <Main>
+  <main>
+    <select name="type" id="Alien">
+      <option value="Alien">Alien</option>
+    </select>
     <CardsContainer />
 
-  </Main>
+  </main>
   
   
 </template>
