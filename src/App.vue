@@ -1,11 +1,19 @@
 <script>
+
+import { store } from './data/store'
+
 export default {
-  name: 'App'
+  name: 'App',
+  data(){
+    return{
+      store
+    }
+  }
 }
 </script>
 
 <template>
-  <h1>Yu-Gi-Oh Api</h1>
+  <h1>{{store.titleApp}}</h1>
   
 </template>
 
