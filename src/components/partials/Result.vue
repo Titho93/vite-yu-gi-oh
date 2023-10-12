@@ -11,7 +11,10 @@ export default {
     },
     computed: {
         outputResult(){
-            return store.cardsList.length
+            if(store.cardsList.length > 0) {
+                return 'Found ' + store.cardsList.length + ' Cards';
+            }
+            return 'Not Found';
         }
     }
 }
@@ -20,7 +23,7 @@ export default {
 <template>
     <div class="row">
         <div class="col-12">
-            <p>Cards found: {{ outputResult }}</p>
+            <p>{{ outputResult }}</p>
         </div>
     </div>
   
