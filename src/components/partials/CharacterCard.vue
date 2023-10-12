@@ -4,7 +4,7 @@ export default {
     name: 'CharacterCard',
     props:{
         name: String,
-        archetype: String,
+        type: String,
         image: String
     }
 }
@@ -16,13 +16,19 @@ export default {
     <div class="bt-card">
        <img :src="image" alt="Card">
        <h6>{{ name }}</h6>
-       <p>{{ archetype }}</p>
+       <p>{{ type }}</p>
     </div>
   </div>
 
 </template>
 
 <style lang="scss">
+
+.col-2 {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
 
 .bt-card {
     text-align: center;
