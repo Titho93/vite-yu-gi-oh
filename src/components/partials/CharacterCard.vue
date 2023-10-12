@@ -8,7 +8,9 @@ export default {
   
   <div>
     <div>
-       <img src="https://images.ygoprodeck.com/images/cards/34541863.jpg" alt="">
+       <img src="https://images.ygoprodeck.com/images/cards/34541863.jpg" alt="Card">
+       <h3>Name card</h3>
+       <p>Species</p>
     </div>
   </div>
 
