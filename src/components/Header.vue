@@ -1,14 +1,14 @@
 <script>
 export default {
-    name: 'Main'
+    name: 'Header'
 }
 </script>
 
 <template>
 
-    <Main>
-        <h1>cards</h1>
-    </Main>
+    <header>
+        <h1>Yu-Gi-Oh</h1>
+    </header>
   
 </template>
 

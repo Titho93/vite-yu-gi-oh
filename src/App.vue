@@ -2,12 +2,14 @@
 
 import axios from 'axios'
 import { store } from './data/store';
-import Main from './components/Main.vue';
+import Header from './components/Header.vue';
+import CardsContainer from './components/CardsContainer.vue'
 
 export default {
   name: 'App',
   components: {
-    Main
+    Header,
+    CardsContainer
   },
   data(){
     return{
@@ -34,8 +36,8 @@ export default {
 
 <template>
 
-  <h1>Yu-Gi-Oh</h1>
-  <Main />
+  <Header />
+  
   
 </template>
 
