@@ -52,4 +52,13 @@ export default {
 
 @use './scss/Main.scss';
 
+select {
+  background-color: white;
+  border-radius: 5px;
+  width: 120px;
+  padding: 5px 10px;
+  margin: 20px 300px;
+  border: none;
+}
+
 </style>
