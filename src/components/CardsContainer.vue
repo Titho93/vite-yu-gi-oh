@@ -37,7 +37,9 @@ export default {
 <style lang="scss" scoped>
 
 .row{
+        height: 100%;
         padding: 0px 20px;
+        overflow: auto;
     }
 
 </style>

@@ -14,7 +14,7 @@ export default {
             if(store.cardsList.length > 0) {
                 return 'Found ' + store.cardsList.length + ' Cards';
             }
-            return 'Not Found';
+            return 'Cards Not Found';
         }
     }
 }

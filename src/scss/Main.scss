@@ -2,10 +2,19 @@
 
 @import 'bootstrap/scss/bootstrap';
 
-main {
+body {
     background-color: $primary-color;
+    height: 100%;
+}
+
+Header {
+    background-color: white;
 }
 
 .bt-card {
     background-color: $primary-color;
+}
+
+.container {
+    height: 100%;
 }
